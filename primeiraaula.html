@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questões.css">
+    <link rel="icon" href="imgs/micon.ico">
+    <title>Primeira aula</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="loader">loading
+            <div class="ball"></div>
+        </div>
+    </div>
+    <img class="imagem" src="imgs/primeiraula.png" alt="primeira aula">
+    <button class="btn btn-ex" onclick="mostrarExercícios()"><a href="#exercícios">Exibir exercícios</a></button><button class="btn btn-home"><a href="index.html">Voltar à página inicial</a></button>
+    <a name="exercícios"></a>
+    <div class="exercícios">
+        <div class="questão pq">
+            <p>1. Imagine que seu chefe pediu para modificar as respostas de um programa para que o resultado fique em caixa alta (letras maiúsculas), qual comando você utilizaria?</p>
+            <label><input type="radio" name="primeiraq" id="radio1a">.append()</label>
+            <label><input type="radio" name="primeiraq" id="radio1b">.strip()</label>
+            <label><input type="radio" name="primeiraq" id="radio1c">.maxlength()</label>
+            <label class="correct"><input type="radio" name="primeiraq" id="radio1d" class="correct-option">.upper()</label>
+        </div>
+        <div class="questão sq">
+            <p>2. Você precisa adicionar as respostas de um input à uma lista 'comidas', quais dos comandos abaixo você usaria?</p>
+            <label><input type="radio" name="segundaq" id="radio2a">resp = int(input('Qual sua comida favorita?')).strip(comidas)</label>
+            <label class="correct"><input type="radio" name="segundaq" id="radio2b" class="correct-option">resp = input('Qual sua comida favorita?').append(comidas)</label>
+            <label><input type="radio" name="segundaq" id="radio2c">resp = str(input('Qual sua comida favorita?')).upper(comidas)</label>
+            <label><input type="radio" name="segundaq" id="radio2d">resp = float(input('Qual sua comida favorita?')).maxlength[comidas]</label>
+        </div>
+        <div class="questão tq">
+            <p>3. Qual é o resultado do código 'print(f'{nome:-^33}')', sendo 'nome = Ana'?</p>
+            <label><input type="radio" name="terceiraq" id="radio3a">-----------------------------nome------------------------------</label>
+            <label><input type="radio" name="terceiraq" id="radio3b">nome______________________________________________</label>
+            <label class="correct"><input type="radio" name="terceiraq" id="radio3c" class="correct-option">------------------------------Ana------------------------------</label>
+            <label><input type="radio" name="terceiraq" id="radio3d">Ana</label>
+        </div>
+        <div class="questão qq">
+            <p>4. Suponhamos que o usuário digitou dois números para realizar a divisão em seu programa, que são 8 e 9, respectivamente. Há um problema pois seu resultado é uma dízima periódica e você deve mostrar o resultado mais simples possível ao usuário. Qual formatação utilizaria para diminuir as casas decimais da variável sendo 'divisão= n2/n1'?</p>
+            <label class="correct"><input type="radio" name="quartaq" id="radio4a" class="correct-option">print(f'{divisão:.2f}')</label>
+            <label><input type="radio" name="quartaq" id="radio4b">print(f'{divisão:2d}')</label>
+            <label><input type="radio" name="quartaq" id="radio4c">print(f'{divisão:2f}')</label>
+            <label><input type="radio" name="quartaq" id="radio4d">print(f'{divisão:.2d}')</label>
+        </div>
+        <div class="questão quq">
+            <p>5. No python é possível replicar textos e variáveis de maneira bem simples, multiplicando como se fosse um número comum. Essa afirmação é:</p>
+            <label class="correct"><input type="radio" name="quintaq" id="radio5a" class="correct-option">Verdadeira</label>
+            <label><input type="radio" name="quintaq" id="radio5b">Falsa</label>
+        </div>
+        <button class="btn btn-an" onclick="calcularNota()">Calcular nota</button>
+    </div>
+</body>
+<script src="preloader.js"></script>
+<script src="sweetalert.js"></script>
+</html>

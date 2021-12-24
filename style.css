@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root{
+    --cor: #BD79FF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 30px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 2.5px;
+    background-color: var(--cor);
+    margin-top: 2%;
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+    0%{width: 0px;}
+    50%{width: 100%;}
+    100%{width: 0px; margin-left: auto;}
+}
+
+h1{
+    color: #BD79FF;
+    margin-top: 1%;
+    text-shadow: 3px 3px 8px #ffffff56;
+}
+
+.blocos{
+    position: relative;
+    max-width: 675px;
+    min-height: 475px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 1% auto;
+}
+
+.baula{
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: var(--cor);
+    line-height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 2px #ffffff56;
+    flex-flow: row wrap;
+}
+
+.baula01:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.baula01:active{
+    background-color: var(--cor);
+    transform: scale(0.95);
+}
+
+.baula02, .baula03, .baula04, .baula05, .baula06{
+    opacity: 40%;
+    cursor: no-drop;
+}
+
+#aula01{
+    width: 100%;
+}
+
+div a, div a:visited{
+    text-decoration: none;
+}
+
+.foto{
+    position: absolute;
+    z-index: -1;
+}
+
+.foto1, .foto3{
+    top: 30px;
+    left: 20px;
+}
+
+.foto2, .foto4{
+    top: 30px;
+    right: 20px;
+}
+
+.foto1{
+    margin-left: 7%;
+    margin-top: 4%;
+}
+
+.foto2{
+    margin-right: 7%;
+    margin-top: 4%;
+}
+
+.foto3{
+    margin-left: 3%;
+    margin-top: 33%;
+}
+
+.foto4{
+    margin-right: 3%;
+    margin-top: 33%;
+}
+
+@media screen and (max-width: 768px) {
+    .blocos{
+      width: 425px;
+    }
+
+    .baula{
+      margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 1.8em;
+        margin: 5% auto;
+    }
+
+    p{
+        font-size: .8em;
+        margin-bottom: 20px;
+    }
+
+    .foto{
+      display: none;
+    }   
+}
+
+@media screen and (max-width: 380px){
+    .blocos{
+        width: 200px;
+    }
+}

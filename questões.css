@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root{
+    --cor: #BD79FF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 30px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 2.5px;
+    background-color: var(--cor);
+    margin-top: 2%;
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+    0%{width: 0px;}
+    50%{width: 100%;}
+    100%{width: 0px; margin-left: auto;}
+}
+
+.imagem{
+    width: 100%;
+}
+
+.btn, .btn a{
+    background-color: var(--cor);
+    color: white;
+    font-family: Montserrat;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto 5% auto;
+    transform: scale(1.5);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    transform: scale(1.6);
+    border: 1px solid white;
+}
+
+.btn:active{
+    transform: scale(1.4);
+}
+
+.btn-home{
+    margin-left: 10%;
+}
+
+p{
+    font-size: .85em;
+}
+
+label{
+    font-size: .75em;
+}
+
+.exercícios{
+    max-width: 1200px;
+    margin: auto;
+    display: none;
+}
+
+input{
+    margin: 20px;
+}
+
+.questão p{
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.questão{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.correct{
+    background-color: transparent;
+    padding-right: 10px;
+    border-radius: 0 8px 8px 0;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: white;
+    border: 3.5px solid black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .btn{
+        transform: scale(.8);
+    }
+
+    .btn:hover{
+        transform: scale(0.9);
+        border: 1px solid white;
+    }
+
+    .btn:active{
+        transform: scale(0.7);
+    }
+
+    .btn-home{
+        margin-left: 1px;
+    }
+
+    p{
+        font-size: .5em;
+    }
+    
+    label{
+        font-size: .45em;
+    }
+
+    input{
+        transform: scale(.5);
+        margin: 5px;
+    }
+
+    .questão:nth-child(5){ 
+        /*NÚMERO NÃO AJUSTÁVEL !!! */
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btn{
+        transform: scale(.5);
+    }
+
+    .btn:hover{
+        transform: scale(0.6);
+        border: 1px solid white;
+    }
+
+    .btn:active{
+        transform: scale(0.4);
+    }
+
+    p{
+        font-size: .3em;
+    }
+    
+    label{
+        font-size: .25em;
+    }
+}
