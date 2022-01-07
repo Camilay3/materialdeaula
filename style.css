@@ -79,26 +79,22 @@ h1{
     flex-flow: row wrap;
 }
 
-.baula01:hover{
+.b-active:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
 
-.baula01:active{
+.b-active:active{
     background-color: var(--cor);
     transform: scale(0.95);
 }
 
-.baula02, .baula03, .baula04, .baula05, .baula06{
+.b-desative{
     opacity: 40%;
     cursor: no-drop;
 }
 
-#aula01{
-    width: 100%;
-}
-
-div a, div a:visited{
+.blocos a, .blocos a:visited{
     text-decoration: none;
 }
 
