@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questões.css">
+    <link rel="icon" href="imgs/micon.ico">
+    <title>Terceira aula</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="loader">loading
+            <div class="ball"></div>
+        </div>
+    </div>
+    <img class="imagem" src="imgs/terceiraaula.png" alt="terceira aula">
+    <button class="btn btn-ex" onclick="mostrarExercícios()"><a href="#exercícios">Exibir exercícios</a></button><button class="btn btn-home"><a href="index.html">Voltar à página inicial</a></button>
+    <a name="exercícios"></a>
+    <div class="exercícios">
+        <div class="questão pq">
+            <p>1. Qual a sintaxe correta para importar uma função?</p>
+            <label><input type="radio" name="primeiraq" id="radio1a">import função from biblioteca</label>
+            <label><input type="radio" name="primeiraq" id="radio1b">from função import biblioteca</label>
+            <label class="correct"><input type="radio" name="primeiraq" id="radio1c"  class="correct-option">from biblioteca import função</label>
+            <label><input type="radio" name="primeiraq" id="radio1d">import biblioteca from função</label>
+        </div>
+        <div class="questão sq">
+            <p>2. Qual a sintaxe correta para definir uma função chamada nome?</p>
+            <label><input type="radio" name="segundaq" id="radio2a">function nome ():</label>
+            <label><input type="radio" name="segundaq" id="radio2b">def function nome:</label>
+            <label><input type="radio" name="segundaq" id="radio2c">def nome ():</label>
+            <label class="correct"><input type="radio" name="segundaq" id="radio2d" class="correct-option">def nome:</label>
+        </div>
+        <div class="questão tq">
+            <p>3. Quantas funções você pode criar em um programa?</p>
+            <label class="correct"><input type="radio" name="terceiraq" id="radio3a" class="correct-option">indefinido</label>
+            <label><input type="radio" name="terceiraq" id="radio3b">20</label>
+            <label><input type="radio" name="terceiraq" id="radio3c">10</label>
+            <label><input type="radio" name="terceiraq" id="radio3d">apenas 3</label>
+        </div>
+        <div class="questão qq">
+            <p>4. Não é necessário utilizar um <b>from</b> em um <b>import</b>. A afirmação é:</p>
+            <label class="correct"><input type="radio" name="quartaq" id="radio4a" class="correct-option">Verdadeira</label>
+            <label><input type="radio" name="quartaq" id="radio4b">Falsa</label>
+        </div>
+        <div class="questão qq">
+            <p>5. Uma definição de função não deve ficar a menos de 5 linhas de distância do programa principal</p>
+            <label><input type="radio" name="quintaq" id="radio5a">Verdadeiro</label>
+            <label class="correct"><input type="radio" name="quintaq" id="radio5b" class="correct-option">Falso</label>
+        </div>
+        <button class="btn btn-an" onclick="calcularNota()">Calcular nota</button>
+    </div>
+</body>
+<script src="preloader.js"></script>
+<script src="sweetalert.js"></script>
+</html>
