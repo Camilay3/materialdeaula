@@ -27,10 +27,10 @@
         </div>
         <div class="questão sq">
             <p>2. Você precisa adicionar as respostas de um input à uma lista 'comidas', quais dos comandos abaixo você usaria?</p>
-            <label><input type="radio" name="segundaq" id="radio2a">resp = int(input('Qual sua comida favorita?')).strip(comidas)</label>
-            <label class="correct"><input type="radio" name="segundaq" id="radio2b" class="correct-option">resp = input('Qual sua comida favorita?').append(comidas)</label>
-            <label><input type="radio" name="segundaq" id="radio2c">resp = str(input('Qual sua comida favorita?')).upper(comidas)</label>
-            <label><input type="radio" name="segundaq" id="radio2d">resp = float(input('Qual sua comida favorita?')).maxlength[comidas]</label>
+            <label><input type="radio" name="segundaq" id="radio2a">comidas.strip(int(input('Qual sua comida favorita?: ')))</label>
+            <label class="correct"><input type="radio" name="segundaq" id="radio2b" class="correct-option">comidas.append(input('Qual sua comida favorita?: '))</label>
+            <label><input type="radio" name="segundaq" id="radio2c">comidas.upper(str(input('Qual sua comida favorita?: ')))</label>
+            <label><input type="radio" name="segundaq" id="radio2d">comidas.maxlength(float(input('Qual sua comida favorita?: ')))</label>
         </div>
         <div class="questão tq">
             <p>3. Qual é o resultado do código 'print(f'{nome:-^33}')', sendo 'nome = Ana'?</p>
