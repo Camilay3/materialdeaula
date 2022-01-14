@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questões.css">
+    <link rel="icon" href="imgs/micon.ico">
+    <title>Quarta aula</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="loader">loading
+            <div class="ball"></div>
+        </div>
+    </div>
+    <img class="imagem" src="imgs/quartaula.png" alt="segunda aula">
+    <button class="btn btn-ex" onclick="mostrarExercícios()"><a href="#exercícios">Exibir exercícios</a></button><button class="btn btn-home"><a href="index.html">Voltar à página inicial</a></button>
+    <a name="exercícios"></a>
+    <div class="exercícios">
+        <div class="questão pq">
+            <p>1. Qual das opções abaixo melhor representa uma tupla vazia?</p>
+            <label><input type="radio" name="primeiraq" id="radio1a">[ ]</label>
+            <label class="correct"><input type="radio" name="primeiraq" class="correct-option" id="radio1b">( )</label>
+            <label><input type="radio" name="primeiraq" id="radio1c">[( )]</label>
+            <label><input type="radio" name="primeiraq" id="radio1d">{ }</label>
+        </div>
+        <div class="questão sq">
+            <p>2. Qual comando abaixo é utilizado para adicionar um item em uma tupla?</p>
+            <label><input type="radio" name="segundaq" id="radio2a">.append()</label>
+            <label><input type="radio" name="segundaq" id="radio2b">.sum()</label>
+            <label><input type="radio" name="segundaq" id="radio2c">.len()</label>
+            <label class="correct"><input type="radio" name="segundaq" id="radio2d" class="correct-option">nenhuma das opções acima</label>
+        </div>
+        <div class="questão tq">
+            <p>3. Em sabores = ['morango', 'chocolate', 'doce de leite'], qual seria o resultado do comando print(sabores[-1])?</p>
+            <label  class="correct"><input type="radio" name="terceiraq" id="radio3a" class="correct-option">doce de leite</label>
+            <label><input type="radio" name="terceiraq" id="radio3b">morango</label>
+            <label><input type="radio" name="terceiraq" id="radio3c">chocolate</label>
+            <label><input type="radio" name="terceiraq" id="radio3d">erro: índice inválido</label>
+        </div>
+        <div class="questão qq">
+            <p>4. Em pessoas = ['Maria', 'João', 'Gustavo', 'Viana'], qual seria o resultado do comando sum(pessoas)?</p>
+            <label><input type="radio" name="quartaq" id="radio4a">João, Gustavo, Maria, Viana</label>
+            <label><input type="radio" name="quartaq" id="radio4b">Maria, João, Gustavo, Viana</label>
+            <label class="correct"><input type="radio" name="quartaq" id="radio4c" class="correct-option">Gustavo, João, Maria, Viana</label>
+            <label><input type="radio" name="quartaq" id="radio4d">só é possível ordenar números</label>
+        </div>
+        <div class="questão qq">
+            <p>5. Não é possível modificar tuplas</p>
+            <label class="correct"><input type="radio" name="quintaq" id="radio5a" class="correct-option">Verdadeiro</label>
+            <label><input type="radio" name="quintaq" id="radio5b">Falso</label>
+        </div>
+        <button class="btn btn-an" onclick="calcularNota()">Calcular nota</button>
+    </div>
+</body>
+<script src="preloader.js"></script>
+<script src="sweetalert.js"></script>
+</html>

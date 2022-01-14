@@ -17,6 +17,7 @@ body{
     font-family: Montserrat;
     text-align: center;
     font-size: 30px;
+    min-height: 105vh;
 }
 
 .overlay{
@@ -61,7 +62,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    margin: 1% auto;
+    margin: 1% auto 0 auto;
 }
 
 .baula{
@@ -131,6 +132,47 @@ h1{
 .foto4{
     margin-right: 3%;
     margin-top: 33%;
+}
+
+.btn{
+    background-color: var(--cor);
+    color: white;
+    font-family: Montserrat;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: .5em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    transform: scale(1.6);
+    border: 1px solid white;
+}
+
+.btn:active{
+    transform: scale(1.4);
+}
+
+.btn-home{
+    margin-left: 10%;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 30px;
+    justify-content: space-between;
+    font-size: .3em;
+}
+
+footer a{
+   color: #dbb7ff;
+}
+
+footer a:hover{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
