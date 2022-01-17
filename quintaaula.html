@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questões.css">
+    <link rel="icon" href="imgs/micon.ico">
+    <title>Quinta aula</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="loader">loading
+            <div class="ball"></div>
+        </div>
+    </div>
+    <img class="imagem" src="imgs/quintaula.png" alt="quinta aula">
+    <button class="btn btn-ex" onclick="mostrarExercícios()"><a href="#exercícios">Exibir exercícios</a></button><button class="btn btn-home"><a href="index.html">Voltar à página inicial</a></button>
+    <a name="exercícios"></a>
+    <div class="exercícios">
+        <div class="questão pq">
+            <img src="imgs/aula05q1.png" alt="primeira questão">
+            <p>1. Qual seria o comando para imprimir "Fortaleza"?</p>
+            <label><input type="radio" name="primeiraq" id="radio1a">print(diretor[1])</label>
+            <label><input type="radio" name="primeiraq" id="radio1b">print(diretor[1][0])</label>
+            <label><input type="radio" name="primeiraq" id="radio1c">print(diretor["Cidade"][0])</label>
+            <label class="correct"><input type="radio" name="primeiraq" id="radio1d" class="correct-option">print(diretor["Cidade"])</label>
+        </div>
+        <div class="questão sq">
+            <p>2. Qual seria o comando para mudar o ano de 1964 para 2022?</p>
+            <label><input type="radio" name="segundaq" id="radio2a">diretor["Ano de nascimento"][0] = 2022</label>
+            <label class="correct"><input type="radio" name="segundaq" id="radio2b" class="correct-option">diretor["Ano de nascimento"] = 2022</label>
+            <label><input type="radio" name="segundaq" id="radio2c">diretor["1964"] = 2022</label>
+            <label><input type="radio" name="segundaq" id="radio2d">diretor[2][0] = 2022</label>
+        </div>
+        <div class="questão tq">
+            <p>3. Qual seria o comando para adicionar a linguagem python ao currículo do diretor?</p>
+            <label><input type="radio" name="terceiraq" id="radio3a">diretor.append(["Linguagem":"Python"])</label>
+            <label><input type="radio" name="terceiraq" id="radio3b">diretor["Linguagem"][0] = "Python"</label>
+            <label class="correct"><input type="radio" name="terceiraq" id="radio3c" class="correct-option">diretor["Linguagem"] = "Python"</label>
+            <label><input type="radio" name="terceiraq" id="radio3d">diretor[3][0] = "Python"</label>
+        </div>
+        <div class="questão qq">
+            <p>4. Qual seria o comando para remover a cidade do diretor?</p>
+            <label class="correct"><input type="radio" name="quartaq" id="radio4a" class="correct-option">diretor.pop("Cidade")</label>
+            <label><input type="radio" name="quartaq" id="radio4b">diretor.remove("Cidade")</label>
+            <label><input type="radio" name="quartaq" id="radio4c">diretor.pop(diretor[1])</label>
+            <label><input type="radio" name="quartaq" id="radio4d">diretor.remove(diretor[1])</label>
+        </div>
+        <div class="questão quq">
+            <p>5. Qual seria o comando para limpar todo o dicionário diretor?</p>
+            <label><input type="radio" name="quintaq" id="radio5a">diretor.limp()</label>
+            <label><input type="radio" name="quintaq" id="radio5b">diretor.remove()</label>
+            <label class="correct"><input type="radio" name="quintaq" id="radio5c" class="correct-option">diretor.clear()</label>
+            <label><input type="radio" name="quintaq" id="radio5d">diretor.exclude()</label>
+        </div>
+        <button class="btn btn-an" onclick="calcularNota()">Calcular nota</button>
+    </div>
+</body>
+<script src="preloader.js"></script>
+<script src="sweetalert.js"></script>
+</html>
