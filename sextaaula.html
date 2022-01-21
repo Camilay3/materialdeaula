@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questões.css">
+    <link rel="icon" href="imgs/micon.ico">
+    <title>Sexta aula</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="loader">loading
+            <div class="ball"></div>
+        </div>
+    </div>
+    <img class="imagem" src="imgs/sextaula.png" alt="sexta aula">
+    <button class="btn btn-ex" onclick="mostrarExercícios()"><a href="#exercícios">Exibir exercícios</a></button><button class="btn btn-home"><a href="index.html">Voltar à página inicial</a></button>
+    <a name="exercícios"></a>
+    <div class="exercícios">
+        <div class="questão pq">
+            <p>1. O que significa a abreviação GUI?</p>
+            <label><input type="radio" name="primeiraq" id="radio1a">Godot Using Interface</label>
+            <label><input type="radio" name="primeiraq" id="radio1b">Gaming Usability Improvement</label>
+            <label><input type="radio" name="primeiraq" id="radio1c">Graphics Unit Interface</label>
+            <label class="correct"><input type="radio" name="primeiraq" id="radio1d" class="correct-option">Graphical User Interface</label>
+        </div>
+        <div class="questão sq">
+            <p>2. Selecione a alternativa que corresponde à uma biblioteca de interface gráfica já existente no Python.</p>
+            <label><input type="radio" name="segundaq" id="radio2a">PyQt5</label>
+            <label class="correct"><input type="radio" name="segundaq" id="radio2b" class="correct-option">tkinter</label>
+            <label><input type="radio" name="segundaq" id="radio2c">PySimpleGUI</label>
+            <label><input type="radio" name="segundaq" id="radio2d">wxPython</label>
+        </div>
+        <div class="questão tq">
+            <p>3. Qual desses comandos importará a biblioteca PySimpleGUI corretamente?</p>
+            <label><input type="radio" name="terceiraq" id="radio3a">from PySimpleGUI as sg</label>
+            <label><input type="radio" name="terceiraq" id="radio3b">import sg from PySimpleGUI</label>
+            <label class="correct"><input type="radio" name="terceiraq" id="radio3c" class="correct-option">import PySimpleGUI as sg</label>
+            <label><input type="radio" name="terceiraq" id="radio3d">as sg import PySimpleGUI</label>
+        </div>
+        <div class="questão qq">
+            <p>4. Analisando o código da estrutura do layout de uma janela, qual das alternativas abaixo estabelece uma semelhança com a mesma?</p>
+            <label class="correct"><input type="radio" name="quartaq" id="radio4a" class="correct-option">Uma matriz, pois assim como ela, o layout possui linhas e colunas.</label>
+            <label><input type="radio" name="quartaq" id="radio4b">Uma sequência de listas e tuplas, pois utilizamos parênteses e colchetes.</label>
+            <label><input type="radio" name="quartaq" id="radio4c">Várias linhas, pois cada lista criada está em uma linha diferente.</label>
+            <label><input type="radio" name="quartaq" id="radio4d">A última lista da estrutura deve sempre conter um sg.Button().</label>
+        </div>
+        <div class="questão quq">
+            <p>5. Um programa com interface gráfica não precisa de um while True para fazer a janela aparecer. A afirmação acima é:</p>
+            <label><input type="radio" name="quintaq" id="radio5a">Verdadeira</label>
+            <label class="correct"><input type="radio" name="quintaq" id="radio5b" class="correct-option">Falsa</label>
+        </div>
+        <button class="btn btn-an" onclick="calcularNota()">Calcular nota</button>
+    </div>
+</body>
+<script src="preloader.js"></script>
+<script src="sweetalert.js"></script>
+</html>
